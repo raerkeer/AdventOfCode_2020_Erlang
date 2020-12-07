@@ -15,8 +15,8 @@ part2(SeatIds)->
 
 my_seat([X, Y | T])->
     case Y-X of
-        2 -> X+1;
-        1 -> my_seat([Y|T])
+        1 -> my_seat([Y|T]);
+        _ -> X+1
     end.
 
 calc_seatid(SeatCode)->
