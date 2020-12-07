@@ -22,9 +22,6 @@ my_seat([X, Y | T])->
 calc_seatid(SeatCode)->
     Bits = lists:map(fun(X) -> get_bit(X) end, SeatCode),
     list_to_integer(Bits, 2).
-    %Row = list_to_integer(string:slice(Bits, 0, 7), 2),
-    %Col = list_to_integer(string:slice(Bits, 7, 3), 2),
-    %Row * 8 + Col.
 
 get_bit($F) -> $0;
 get_bit($B) -> $1;
