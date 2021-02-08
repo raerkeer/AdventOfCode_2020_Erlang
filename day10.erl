@@ -17,6 +17,7 @@ calc1([X,Y|T], Ones, Threes) ->
 calc1(_, Ones, Threes)->
     Ones * (Threes + 1).
 
+% Idea for part 2 stolen from camilleryr (https://github.com/camilleryr/advent20/blob/main/lib/day_10.ex) and translated to Erlang
 part2(Input)-> 
     {Consecutives,_} = lists:foldl(fun(X, Acc) -> calc_consecutive(X, Acc) end, {[1],0}, Input),
     Permutations = lists:map(fun(X)-> calc_tribonacci(X) end, Consecutives),
