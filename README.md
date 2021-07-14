@@ -7,6 +7,7 @@ I'm trying to solve some of the challenges from https://adventofcode.com/2020/ u
 - [Day 4](code/day04)
 - [Day 5](code/day05)
 - [Day 6](code/day06)
-- [Day 7](code/day08)
-- [Day 8](code/day09)
-- [Day 9](code/day10)
+- Day 7
+- [Day 8](code/day08)
+- [Day 9](code/day09)
+- [Day 10](code/day10)
